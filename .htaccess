@@ -1,0 +1,24 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^kincaipayment\.kincaiseluler/.my.id [NC]
+RewriteRule ^(.*)$ https://kincaipayment.kincaiseluler.my.id/$1 [L,R=301]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+<IfModule mod_rewrite.c>
+Options -Indexes
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+</IfModule>
+
+# php -- cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+#<IfModule mime_module>
+#  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+#</IfModule>
+# php -- cPanel-generated handler, do not edit
+
+<FilesMatch "\.(php4|php5|php3|php2|php|phtml)$">
+SetHandler application/x-httpd-alt-php72___lsphp
+</FilesMatch>

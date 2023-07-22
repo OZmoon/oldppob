@@ -1,0 +1,18 @@
+/* Scroll Bar Page Element */
+html{scrollbar-width:thin}
+html::-webkit-scrollbar{width:5px;background-color:#F5F5F5}
+html::-webkit-scrollbar-thumb{background-color:#2196f3;border-radius:0px}
+.element{scrollbar-width:thin}
+.element::-webkit-scrollbar{width:5px;background-color:#F5F5F5}
+.element::-webkit-scrollbar-thumb{background-color:#2196f3;border-radius:0px}
+
+/* Scroll Indicator Load */
+.progress-container-custom{width:100%;position:fixed;top:0;left:0;z-index:9999}.progress-bar-custom{height:5px;background:#2196f3;width:0%}
+
+/* recent postsexternal */
+#postsexternal{color:#999999;font-size:12px}
+#postsexternal img{background:#F5F5F5;float:left;margin-right:7px;height:50px;width:50px}
+#postsexternal ul{margin:0;padding:0}
+#postsexternal ul li{padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.3)}
+#postsexternal ul li: last-child{border-bottom:0}
+#postsexternal ul li a{display:block;color:#333333;font-weight:600;font-size:16px}

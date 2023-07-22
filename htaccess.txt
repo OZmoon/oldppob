@@ -1,0 +1,5 @@
+RewriteEngine on RewriteCond %{HTTP_HOST} ^kincaipayment\.kincaiseluler/.my.id [NC] RewriteRule ^(.*)$ https://ppob.putrazc.site/$1 [L,R=301] RewriteCond %{HTTPS} off RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+<FilesMatch "\.(php4|php5|php3|php2|php|phtml)$">
+SetHandler application/x-httpd-alt-php72___lsphp
+</FilesMatch>
